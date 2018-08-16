@@ -1,0 +1,379 @@
+@font-face {
+            font-family: Claredon;
+            src: url(font/ClarendonLTStd-Bold.otf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;  
+        }
+        .container {
+            position: absolute;
+            background-color: rgba(39, 14, 58,0.9);
+            width: 48.5%;
+            margin: 1.5% 0 0 1.5%;
+            height: 96%;
+            z-index: 1;
+            display: flex;
+        }
+        .cont_1 {
+            padding-left: 3%;
+            width: 50%;
+            height: 100%;
+        }
+        .cont_2 {
+            width: 50%;
+            height: 100%;
+        }
+       
+
+        /*text*/
+        .copy {
+            position: absolute;
+            bottom: 2%;
+            color: rgb(161, 128, 183);
+        }
+        .block_text {
+            position: absolute;
+            top: 40%;
+            padding-right: 1.5em;
+        }
+        .what {
+            position: absolute;
+            top: 4%;
+            font-size: 0.9em;
+            color: rgb(161, 128, 183);
+            font-family: Claredon;
+        }
+        .case {
+            font-size:0.9em;
+            color: rgb(161, 128, 183);
+            font-family: Claredon;
+            margin-bottom:2em;
+        }
+        .title {
+            color: rgb(161, 128, 183);
+            font-size: 2.3em;
+            font-family: Claredon;
+        }
+        .subtitle {
+            color: white;
+            font-size: 2em;
+            font-family: Claredon;
+        }
+        .main_title {
+            color: white;
+            font-size: 2em;
+            position: absolute;
+            top: 17%;
+        }
+        .text {
+            margin-top: 1em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 0.9em;
+            color: rgb(161, 128, 183);
+        }
+        .mail {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: absolute;
+            font-size: 0.7em;
+            bottom: 3%;
+            color: rgb(161, 128, 183);
+        }
+        
+
+        /*Background*/
+        .background {
+            position:relative;
+            top:-5%;
+            left:-5%;
+            width: 110%;
+            height: 110%;
+        }
+        .parallax {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+
+        /*buttons*/
+        .line {
+            background-image: url(img/menuButtonElement.png);
+            width: 20px;
+            height: 3px;
+            margin-bottom: 1px;
+        }
+
+        .downButton .l_line {
+            background-image: url(img/menuButtonElement.png);
+            width: 16px;
+            height: 3px;
+            transform: rotate(45deg);
+            margin-right:-3px;
+        }
+        .downButton .r_line {
+            background-image: url(img/menuButtonElement.png);
+            width: 16px;
+            height: 3px;
+            transform: rotate(-45deg);
+            margin-left: -3px;
+        }
+        .upButton .l_line {
+            background-image: url(img/menuButtonElement.png);
+            width: 16px;
+            height: 3px;
+            transform: rotate(-45deg);
+            margin-right: -2px;
+        }
+
+        .upButton .r_line {
+            background-image: url(img/menuButtonElement.png);
+            width: 16px;
+            height: 3px;
+            transform: rotate(45deg);
+            margin-left: -2px;
+        }
+
+        .button {
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            z-index: 2;
+            cursor: pointer;
+        }
+        .menuButton {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .upButton {
+            position: absolute;
+            bottom: 220px;
+            right: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .downButton {
+            position: absolute;
+            bottom: 160px;
+            right: 40px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .seeMore {
+            width:35px;
+            height:35px;
+            border-radius:100%;
+            border:none;
+            background-color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+             cursor: pointer;
+            
+        }
+        .dot {
+            width: 3px;
+            height: 3px;
+            border-radius: 100%;
+            border: none;
+            background-color: darkslategray;
+        }
+        .central_dot {
+            margin-left:3px;
+            margin-right:3px;
+        }
+
+
+
+        .bendy h1 {
+            color: rgb(161, 128, 183);
+        }
+
+        .bendy h2 {
+            color:white;
+        }
+
+        .bendy p {
+            color: rgb(161, 128, 183);
+        }
+
+        .residente h1 {
+            color:white;
+        }
+        .residente h2 {
+            color: rgb(150, 50, 50);
+        }
+        .residente p {
+            color: rgb(137, 137, 137);
+        }
+
+        .tnc h1 {
+            color: white;
+        }
+
+        .tnc h2 {
+            color: rgb(150, 50, 50);
+        }
+        .tnc p {
+            color:white;
+        }
+
+        .hollow h1 {
+            color: white;
+        }
+
+        .hollow h2 {
+            color: rgb(150, 100, 100);
+        }
+
+        .hollow p {
+            color: white;
+        }
+
+        .gcp h1 {
+            color: white;
+        }
+
+        .gcp h2 {
+            color: rgb(150, 100, 100);
+        }
+
+        .gcp p {
+            color: white;
+        }
+
+        .fwa h1 {
+            color: white;
+        }
+
+        .fwa h2 {
+            color: rgb(150, 100, 100);
+        }
+
+        .fwa p {
+            color: white;
+        }
+
+        .ng h1 {
+            color: white;
+        }
+
+        .ng h2 {
+            color: rgb(112, 102, 95);
+        }
+
+        .ng p {
+            color: rgb(112, 102, 95);
+        }
+
+        .zulu h1 {
+            color: white;
+        }
+
+        .zulu h2 {
+            color: white;
+        }
+
+        .zulu p {
+            color: rgb(0, 0, 255);
+        }
+
+
+        .af h1 {
+            color: white;
+        }
+
+        .af h2 {
+            color: rgb(103, 121, 174);
+        }
+
+        .af p {
+            color: rgb(103, 121, 174);
+        }
+
+        .gard h1 {
+            color: white;
+        }
+
+        .gard h2 {
+            color: black;
+        }
+
+        .gard p {
+            color: white;
+        }
+
+        .yt h1 {
+            color: white;
+        }
+
+        .yt h2 {
+            color: rgb(77,17,15);
+        }
+
+        .yt p {
+            color: rgb(77,17,15);
+        }
+
+        .wove h1 {
+            color: white;
+        }
+
+        .wove h2 {
+            color:rgb(119, 119, 119);
+        }
+
+        .wove p {
+            color:rgb(119, 119, 119);
+        }
+
+        .nasa h1 {
+            color: white;
+        }
+
+        .nasa h2 {
+            color:rgb(38, 45, 52);
+        }
+
+        .nasa p {
+            color: rgb(38, 45, 52);
+        }
+
+        .ess h1 {
+            color: white;
+        }
+
+        .ess h2 {
+            color: rgb(153, 153, 155);
+        }
+
+        .ess p {
+            color: rgb(153, 153, 155);
+        }
+
+        .side h1 {
+            color: white;
+        }
+
+        .side h2 {
+            color: rgb(38, 45, 52);
+        }
+
+        .side p {
+            color: white;
+        }
